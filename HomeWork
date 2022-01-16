@@ -10,11 +10,7 @@ public class HomeWorkApp {
 
     public static boolean twoNumbers(int a, int b) {
         int sum = a + b;
-        if (sum >= 10 && sum <= 20) {
-            return true;
-        } else {
-            return false;
-        }
+        return (sum >= 10 && sum <= 20);
     }
 
     public static void nool(int a) {
@@ -26,11 +22,8 @@ public class HomeWorkApp {
     }
 
     public static boolean negative(int a) {
-        if (a < 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return  (a < 0);
+
     }
 
     public static void torepeat(String word, int times) {
@@ -40,17 +33,7 @@ public class HomeWorkApp {
     }
 
     public static boolean hard(int a) {
-        System.out.println(" Возможно правильно ");
-        if (a % 4 == 1) {
-            return true;
-        } else if (a % 100 == 1) {
-            return true;
-        } else if (a % 400 == 1) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return  (a % 4 == 1 && a % 100 == 1 && a % 400 == 1);
     }
 
     public static void text () {
