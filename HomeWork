@@ -1,0 +1,59 @@
+public class HomeWorkApp {
+    public static void main(String[] arg) {
+        System.out.println(twoNumbers(7, 4));
+        nool(5);
+        System.out.println(negative(5));
+        torepeat(" Java с нуля ", 5);
+        System.out.println(hard(102));
+
+    }
+
+    public static boolean twoNumbers(int a, int b) {
+        int sum = a + b;
+        if (sum >= 10 && sum <= 20) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void nool(int a) {
+        if (a >= 0) {
+            System.out.println(" Число положительное ");
+        } else {
+            System.out.println(" Число отрицательное ");
+        }
+    }
+
+    public static boolean negative(int a) {
+        if (a < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void torepeat(String word, int times) {
+        for (int i = 0; i <= times; i++){
+            System.out.println(word);
+        }
+    }
+
+    public static boolean hard(int a) {
+        System.out.println(" Возможно правильно ");
+        if (a % 4 == 1) {
+            return true;
+        } else if (a % 100 == 1) {
+            return true;
+        } else if (a % 400 == 1) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public static void text () {
+        System.out.println(" Так и не понял как вывести ошибку в консоль ");
+    }
+}
